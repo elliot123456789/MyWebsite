@@ -9,11 +9,16 @@ body {
 
     height: 100vh;
 
-    justify-content: center;
-    align-items: center;
+
+
 }
 
 h1 {
-    color: rgb(76, 39, 25);
+    color: rgb(239, 221, 155);
     font-family: "Quicksand";
+    text-align: center;
+    font-size: medium;
+
+    margin-left: auto;
+    margin-right: auto;
 }

@@ -1,24 +1,108 @@
 @import url('https://api.fonts.coollabs.io/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 body {
-    background-color: rgb(56, 77, 72);
+    background-color: rgb(51, 51, 51);
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: row;
-
-    height: 100vh;
-
-
-
 }
 
-h1 {
-    color: rgb(239, 221, 155);
-    font-family: "Quicksand";
+.container {
+    position: relative;
     text-align: center;
-    font-size: medium;
+    color: white;
+}
 
-    margin-left: auto;
+html {
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.centered {
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: xx-large;
+    font-family: Quicksand;
+}
+
+.centeredLow {
+    position: absolute;
+    top: 37%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: large;
+    font-family: Quicksand;
+}
+
+.DownArrow {
+    position: absolute;
+    top: 44%;
+    left: 50%;
+    width: 5%;
+    transform: translate(-50%, -50%);
+}
+
+.MainImage {
+    min-height: 100vh
+}
+
+.Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+}
+
+li,
+a,
+button {
+    text-underline-offset: 7px;
+    font-family: "inter";
+    font-weight: 500;
+    font-size: 16px;
+    color: aliceblue;
+}
+
+.logo {
+    cursor: pointer;
     margin-right: auto;
+}
+
+.logo_text {
+    font-family: "inter";
+    color: rgb(255, 255, 255);
+    margin-right: 39%;
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 13px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+    color: #0088a9;
+}
+
+button {
+    margin-left: 50px;
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgba(0, 136, 169, 0.8);
 }

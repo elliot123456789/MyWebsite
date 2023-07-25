@@ -1,0 +1,153 @@
+--GNP html:
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Glacier National Park</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+        <body>
+            <div class="Header">
+                <img class="logo" src="WebsiteImages\GNPLogoNoBorder.png" with="70" height="70" alt="logo">
+                <h2 class="logo_text">Glacier National Park</h2>
+                <nav>
+                    <ul class="nav_links">
+                        <li><a href="#">Reserve</a></li>
+                        <li><a href="#">Trails</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                </nav>
+                <a class="cta" href="#"><button>Contact</button></a>
+            </div>
+            
+            <div class="container">
+                <img class="MainImage" src="\WebsiteImages\WebsiteBackgroundImage.png" alt="Main Background Image">
+                <div class="centered"><b>Glacier National Park</b></div>
+                <div class="centeredLow">Unofficial website</div>
+                <img class="DownArrow" src="\WebsiteImages\ArrowDown.png" alt="Down Image">
+            </div>  
+        </body>
+</html>
+
+
+
+
+
+
+
+
+
+--GNC .css:
+
+@import url('https://api.fonts.coollabs.io/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body {
+    background-color: rgba(51, 51, 51);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+html {
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.centered {
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: xx-large;
+    font-family: Quicksand;
+}
+
+.centeredLow {
+    position: absolute;
+    top: 37%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: large;
+    font-family: Quicksand;
+}
+
+.DownArrow {
+    position: absolute;
+    top: 44%;
+    left: 50%;
+    width: 5%;
+    transform: translate(-50%, -50%);
+}
+
+.MainImage {
+    min-height: 100vh
+}
+
+.Header {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+}
+
+li,
+a,
+button {
+    text-underline-offset: 7px;
+    font-family: "inter";
+    font-weight: 500;
+    font-size: 16px;
+    color: aliceblue;
+}
+
+.logo {
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.logo_text {
+    font-family: "inter";
+    color: rgb(255, 255, 255);
+    margin-right: 39%;
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 13px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+    color: #0088a9;
+}
+
+button {
+    margin-left: 50px;
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+}
